@@ -12,13 +12,13 @@ public class BinarySearch {
         while(start <= end){
             int mid = (start+end)/2;
             if (newList[mid] == target){
-                result = newList[mid];
+                return mid;
             }
             else if (target < newList[mid]){
-                end = mid;
+                end = mid-1;
             }
             else{
-                start = mid;
+                start = mid +1;
             }
         }
         return result;
