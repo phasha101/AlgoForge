@@ -1,6 +1,7 @@
 package com.phasha;
 
 import com.phasha.Easylevel.LinearSearch;
+import com.phasha.IntermediateLevel.BinarySearch;
 
 public class Main {
 
@@ -11,7 +12,7 @@ public class Main {
             list[i] = i; // fill array with 0,1,2,...9
         }
 
-        LinearSearch search = new LinearSearch();
+        BinarySearch search = new BinarySearch();
         System.out.println(search.run(list, 4));
     }
 }
