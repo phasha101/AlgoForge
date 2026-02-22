@@ -9,12 +9,12 @@ public class BinarySearch {
         int[] newList = Arrays.stream(list).sorted().toArray();
         int start = 0;
         int end = newList.length-1;
-        while(result != target){
-            int mid = (int) (start+end)/2;
+        while(start <= end){
+            int mid = (start+end)/2;
             if (newList[mid] == target){
-                result = list[mid];
+                result = newList[mid];
             }
-            else if (target < list[mid]){
+            else if (target < newList[mid]){
                 end = mid;
             }
             else{
